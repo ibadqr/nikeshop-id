@@ -122,7 +122,7 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `profile_image` varchar(255) DEFAULT 'images/default_profile.jpg',
+  `profile_image` varchar(255) DEFAULT '../uploads/default_profile.jpg',
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `role` enum('user','admin') DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
